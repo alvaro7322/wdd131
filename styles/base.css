@@ -1,0 +1,93 @@
+:root {
+    --titles-font: 'Montserrat', sans-serif;
+    --text-font: 'Open Sans', sans-serif;
+    --primary-color: white;
+    --secondary-color: black;
+    --title-font-size: 2rem;
+    --text-font-size: 1.5rem;
+    
+}
+header span {
+    display: block;
+    margin: 0 auto;
+}
+header {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+    font-size: var(--title-font-size);
+    font-family: var(--titles-font);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: rgb(125, 27, 27);
+    font-family: var(--titles-font);
+    border-top: solid white 3.5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem; 
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--primary-color);
+  color: rgb(125, 27, 27);
+  border-radius: 5px;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: solid black 3.5px;
+  font-family: var(--text-font);
+  font-size: var(--text-font-size);
+}
+
+h1 {
+    font-family: var(--titles-font);
+    font-size: var(--title-font-size);
+    text-align: center;
+}
+.contenido {
+    display: grid;
+    grid-template-columns: 200px 1fr; 
+    gap: 20px;
+    margin-top: 10px;
+    align-items: start;
+}
+
+.contenido img, .contenido-reverse img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+.contenido-reverse {
+    display: grid;
+    grid-template-columns: 1fr 200px; 
+    gap: 20px;
+    margin-top: 10px;
+    align-items: start;
+}
+h2 {
+    border: solid black 3.5px;
+    background-color: rgb(125, 27, 27);
+    color: var(--primary-color);
+    width: 12rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+.first-section {
+    border-bottom: dotted black 0.2rem;
+}
+
+footer {
+    text-align: center;
+}

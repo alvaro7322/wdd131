@@ -1,0 +1,39 @@
+body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    grid-column: 1 / 3;
+    height: 50px;
+}
+
+header {
+    background-color: aquamarine;
+    grid-column: 1 / 3;
+    height: 50px;
+}
+
+main {
+    background-color: cadetblue;
+    padding: 0.5rem;
+    height: 150px;
+}
+
+footer {
+    background-color: cyan;
+    grid-column: 1 / 3;
+    padding: 0.5rem;
+    height: 50px;
+}
+
+aside {
+    background-color: beige;
+    padding: 0.5rem;
+    height: 150px;
+}
+

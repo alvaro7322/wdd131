@@ -65,7 +65,7 @@ header, footer {
 }
 
 header {
-    border-bottom: none;
-    margin-bottom: none
+    border-bottom: 0;
+    margin-bottom: 0;
     ;
 }

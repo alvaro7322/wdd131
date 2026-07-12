@@ -1,0 +1,71 @@
+:root {
+    --titles-font: 'Poppins', sans-serif;
+    --text-font: 'Roboto', sans-serif;
+    --primary-color: white;
+    --secondary-color: #661c1c;
+    --title-font-size: 1.5rem;
+    --text-font-size: 1.1rem;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--text-font);
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1, h2 {
+    font-family: var(--titles-font);
+}
+
+header, footer {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    width: 100%;
+}
+
+.hero {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.hero picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-position: center;
+}
+
+.data-card ul, .weather-card ul {
+    list-style: none;
+    max-width: 400px;
+}
+
+.data-card ul {
+    border-bottom: 1px solid gray;
+}
+
+.data-card li, .weather-card li {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    text-align: left;
+    gap: 15px;
+    font-size: var(--text-font-size);
+    margin-bottom: 0.75rem;
+}
+
+.data-card li strong, .weather-card li strong {
+    text-align: right;
+}
+
+header {
+    border-bottom: none;
+    margin-bottom: none
+    ;
+}

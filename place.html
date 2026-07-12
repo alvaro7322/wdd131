@@ -20,14 +20,13 @@
 
     <main>
         <div class="hero">
-            <!-- Aquí irá tu elemento <picture> con la imagen de Perú (por ejemplo, Machu Picchu o una Llama) -->
             <picture>
-                <source media="(min-width: 1000px)" srcset="images/peru-large.webp">
-                <source media="(min-width: 500px)" srcset="images/peru-medium.webp">
-                <img src="images/peru-small.webp" alt="Machu Picchu historic sanctuary in Peru" width="1500" height="750">
+                <source media="(min-width: 1000px)" srcset="images/lima-large.webp">
+                <source media="(min-width: 500px)" srcset="images/lima-medium.webp">
+                <img src="images/machu-pichu.webp" alt="Machu Picchu historic sanctuary in Peru" width="500" height="700">
             </picture>
 
-            <section class="card data-card">
+            <section class="data-card">
                 <h2>Data</h2>
                 <ul>
                     <li><strong>Area:</strong> 1,285,216 sq km</li>
@@ -41,17 +40,27 @@
                 </ul>
             </section>
 
-            <section class="weather">
-                <h2>Weather ⛅</h2>
+            <section class="weather-card">
+                <h2>Weather</h2>               
+                <div class="weather-icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="black"><path d="M440-760v-160h80v160h-80Zm266 110-56-56 113-114 56 57-113 113Zm54 210v-80h160v80H760Zm3 299L650-254l56-56 114 112-57 57ZM254-650 141-763l57-57 112 114-56 56Zm-14 450h180q25 0 42.5-17.5T480-260q0-25-17-42.5T421-320h-51l-20-48q-14-33-44-52.5T240-440q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T40-320q0-83 58.5-141.5T240-520q60 0 109.5 32.5T423-400q58 0 97.5 43T560-254q-2 57-42.5 95.5T420-120H240Zm320-134q-5-20-10-39t-10-39q45-19 72.5-59t27.5-89q0-66-47-113t-113-47q-60 0-105 39t-53 99q-20-5-41-9t-41-9q14-88 82.5-144T480-720q100 0 170 70t70 170q0 77-44 138.5T560-254Zm-79-226Z"/></svg>
+                </div>
+
                 <ul>
                     <li><strong>Temperature:</strong> 18 °C</li>
                     <li><strong>Conditions:</strong> Mostly Cloudy</li>
                     <li><strong>Wind:</strong> 14 km/h</li>
-                    <li><strong>Wind Chill:</strong> 17.5 °C</li>
+                    <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
                 </ul>
             </section>
         </div>
     </main>
-    
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Alvaro Garcia, Peru
+        </p>
+
+        <p id="lastModified"></p>     
+    </footer>
 </body>
 </html>

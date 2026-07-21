@@ -104,7 +104,6 @@ function displayTemples(templeList) {
 
 
   templeList.forEach(temple => {
-    // Crear elementos HTML
     let card = document.createElement("section");
     card.classList.add("temple-card");
 

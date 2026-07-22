@@ -1,0 +1,134 @@
+:root {
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --accent-red: #af2b2b;
+    --accent-gold: #d4a359;
+    --text-main: #e0e0e0;
+    --border-color: #333333;
+
+
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+    --quote-font: 'Cinzel', serif;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--bg-secondary);
+    border-bottom: 3px solid var(--accent-red);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    color: var(--text-main);
+    margin: 0;
+}
+
+header p {
+    color: var(--accent-gold);
+    margin-top: 0.5rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+h2 {
+    color: var(--accent-red);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: var(--accent-gold);
+}
+
+blockquote {
+    font-family: var(--quote-font);
+    font-style: italic;
+    color: var(--accent-gold);
+    border-left: 3px solid var(--accent-red);
+    margin: 1rem 0;
+    padding-left: 1rem;
+}
+
+.color-box {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 8px;
+    border: 1px solid #ffffff;
+}
+.wireframe-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.wireframe-box {
+    flex: 1;
+    min-width: 260px;
+    border: 2px dashed var(--accent-gold);
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: var(--bg-primary);
+}
+
+.wireframe-box h4 {
+    margin-top: 0;
+    color: var(--accent-gold);
+    text-align: center;
+    font-family: var(--heading-font);
+}
+
+.wf-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.wf-block {
+    background-color: #2a2a2a;
+    border: 1px solid var(--border-color);
+    padding: 0.6rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-main);
+    border-radius: 4px;
+    font-family: var(--body-font);
+}
+
+.wf-row {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.wf-row .wf-block {
+    flex: 1;
+}

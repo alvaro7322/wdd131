@@ -3,147 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A page with the most important information about 322 and its impact on the South American Dota 2 scene.">
+    <meta name="author" content="Alvaro Garcia">
     <title>W05 Project: Site Plan - 322 Archive</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:ital,wght@1,600&family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/siteplan.css">
-    <style>
-        :root {
-            --bg-primary: #121212;
-            --bg-secondary: #1e1e1e;
-            --accent-red: #af2b2b;
-            --accent-gold: #d4a359;
-            --text-main: #e0e0e0;
-            --border-color: #333333;
-
-
-            --heading-font: 'Montserrat', sans-serif;
-            --body-font: 'Open Sans', sans-serif;
-            --quote-font: 'Cinzel', serif;
-        }
-
-        body {
-            font-family: var(--body-font);
-            background-color: var(--bg-primary);
-            color: var(--text-main);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: var(--bg-secondary);
-            border-bottom: 3px solid var(--accent-red);
-            padding: 1.5rem;
-            text-align: center;
-        }
-
-        header h1 {
-            font-family: var(--heading-font);
-            color: var(--text-main);
-            margin: 0;
-        }
-
-        header p {
-            color: var(--accent-gold);
-            margin-top: 0.5rem;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        section {
-            background-color: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        h1, h2, h3 {
-            font-family: var(--heading-font);
-        }
-
-        h2 {
-            color: var(--accent-red);
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 0.5rem;
-        }
-
-        h3 {
-            color: var(--accent-gold);
-        }
-
-        blockquote {
-            font-family: var(--quote-font);
-            font-style: italic;
-            color: var(--accent-gold);
-            border-left: 3px solid var(--accent-red);
-            margin: 1rem 0;
-            padding-left: 1rem;
-        }
-
-        .color-box {
-            display: inline-block;
-            width: 18px;
-            height: 18px;
-            vertical-align: middle;
-            margin-right: 8px;
-            border: 1px solid #ffffff;
-        }
-        .wireframe-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            margin-top: 1rem;
-    }
-
-        .wireframe-box {
-            flex: 1;
-            min-width: 260px;
-            border: 2px dashed var(--accent-gold);
-            border-radius: 6px;
-            padding: 1rem;
-            background-color: var(--bg-primary);
-        }
-
-        .wireframe-box h4 {
-            margin-top: 0;
-            color: var(--accent-gold);
-            text-align: center;
-            font-family: var(--heading-font);
-        }
-
-        .wf-layout {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-
-        .wf-block {
-            background-color: #2a2a2a;
-            border: 1px solid var(--border-color);
-            padding: 0.6rem;
-            text-align: center;
-            font-size: 0.85rem;
-            color: var(--text-main);
-            border-radius: 4px;
-            font-family: var(--body-font);
-        }
-
-        .wf-row {
-            display: flex;
-            gap: 0.5rem;
-        }
-
-        .wf-row .wf-block {
-            flex: 1;
-        }
-    </style>
 </head>
 <body>
 
@@ -159,6 +25,7 @@
             <p><strong>Optional Domain Availability:</strong> 322archive.gg</p>
             <p><strong>Description:</strong> I chose the name "322 Archive" because it combines "322"—the most famous numeric meme and competitive scandal in Dota 2 history—with "Archive", which signals to visitors that the site is an educational repository documenting match-fixing incidents and their severe historical impact on South American esports.</p>
         </section>
+
         <section id="site-purpose">
             <h2>Site Purpose</h2>
             <p>The site provides an educational and historical repository about match-fixing in Dota 2 by offering a chronological timeline of the original 2013 "322" incident, detailed case studies of South American banned teams like <em>Elite Wolves</em>, and informative resources on competitive integrity regulations for aspiring pro players.</p>
@@ -171,32 +38,34 @@
                 <li>Which South American teams and players were permanently banned by Valve for match-fixing, when did it happen, and how did those bans impact the growth of esports in the region?</li>
             </ul>
         </section>
+
         <section id="color-schema">
             <h2>Color Schema</h2>
             <p>The site's color palette is directly inspired by the dark, dramatic aesthetic of Dota 2 and esports interfaces:</p>
             <ul>
                 <li>
-                    <span class="color-box" style="background-color: #121212;"></span>
+                    <span class="color-box primary-bg-box"></span>
                     <strong>Primary Background (#121212):</strong> A dark charcoal gray used for the main body background to give a gaming feel and reduce eye strain.
                 </li>
                 <li>
-                    <span class="color-box" style="background-color: #1e1e1e;"></span>
+                    <span class="color-box secondary-bg-box"></span>
                     <strong>Secondary Container (#1e1e1e):</strong> A dark gray used for section cards, headers, and content blocks to create contrast and structure.
                 </li>
                 <li>
-                    <span class="color-box" style="background-color: #af2b2b;"></span>
+                    <span class="color-box accent-red-box"></span>
                     <strong>Accent Red (#af2b2b):</strong> Inspired by the iconic Dota 2 logo crimson red. Used for main headings (H1, H2), borders, and emphasis on bans/warnings.
                 </li>
                 <li>
-                    <span class="color-box" style="background-color: #d4a359;"></span>
+                    <span class="color-box accent-gold-box"></span>
                     <strong>Accent Gold (#d4a359):</strong> Inspired by the Aegis gold color. Used for subheadings (H3), important dates in timelines, key terms, and links.
                 </li>
                 <li>
-                    <span class="color-box" style="background-color: #e0e0e0;"></span>
+                    <span class="color-box text-main-box"></span>
                     <strong>Text Main (#e0e0e0):</strong> An off-white color used for all body text, paragraphs, and list items to ensure high legibility.
                 </li>
             </ul>
         </section>
+
         <section id="typography">
             <h2>Typography</h2>
             <p>The site uses three distinct web fonts imported from Google Fonts to structure hierarchy and highlight historical quotes from the competitive scene:</p>
@@ -212,17 +81,17 @@
                 </li>
             </ul>
         </section>
+
         <section id="wireframes">
             <h2>Wireframes</h2>
             <p>The following diagrams represent the proposed structural layout for the home page in both Mobile (Narrow) and Desktop (Wide) viewports:</p>
 
             <div class="wireframe-grid">
-                <!-- Mobile Wireframe -->
                 <div class="wireframe-box">
-                    <h4>Mobile View (Narrow Layout)</h4>
+                    <h3>Mobile View (Narrow Layout)</h3>
                     <div class="wf-layout">
                         <div class="wf-block">[ Header / Logo / Mobile Menu ]</div>
-                        <div class="wf-block" style="height: 50px; line-height: 50px;">[ Hero: What is 322? ]</div>
+                        <div class="wf-block hero-block">[ Hero: What is 322? ]</div>
                         <div class="wf-block">[ Origin Section: Solo 2013 ]</div>
                         <div class="wf-block">[ SA Impact: Elite Wolves Case ]</div>
                         <div class="wf-block">[ Timeline Cards ]</div>
@@ -230,15 +99,14 @@
                     </div>
                 </div>
 
-                <!-- Desktop Wireframe -->
                 <div class="wireframe-box">
-                    <h4>Desktop View (Wide Layout)</h4>
+                    <h3>Desktop View (Wide Layout)</h3>
                     <div class="wf-layout">
                         <div class="wf-block">[ Header / Logo | Navigation Bar ]</div>
-                        <div class="wf-block" style="height: 60px; line-height: 60px;">[ Hero Banner: The $100 Incident That Changed SA Esports ]</div>
+                        <div class="wf-block hero-block-desktop">[ Hero Banner: The $100 Incident That Changed SA Esports ]</div>
                         <div class="wf-row">
-                            <div class="wf-block" style="flex: 2;">[ Main Content: History & Analysis ]</div>
-                            <div class="wf-block" style="flex: 1;">[ Sidebar: Key Stats & Quotes ]</div>
+                            <div class="wf-block main-content-block">[ Main Content: History & Analysis ]</div>
+                            <div class="wf-block sidebar-block">[ Sidebar: Key Stats & Quotes ]</div>
                         </div>
                         <div class="wf-block">[ Interactive Timeline Grid ]</div>
                         <div class="wf-block">[ Footer & Credits ]</div>
@@ -246,8 +114,6 @@
                 </div>
             </div>
         </section>
-
-
     </main>
 
     <footer>

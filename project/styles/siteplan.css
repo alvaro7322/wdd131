@@ -6,7 +6,6 @@
     --text-main: #e0e0e0;
     --border-color: #333333;
 
-
     --heading-font: 'Montserrat', sans-serif;
     --body-font: 'Open Sans', sans-serif;
     --quote-font: 'Cinzel', serif;
@@ -76,6 +75,7 @@ blockquote {
     padding-left: 1rem;
 }
 
+/* Color Box Classes (Replaces inline style="background-color: ...") */
 .color-box {
     display: inline-block;
     width: 18px;
@@ -84,6 +84,14 @@ blockquote {
     margin-right: 8px;
     border: 1px solid #ffffff;
 }
+
+.primary-bg-box { background-color: #121212; }
+.secondary-bg-box { background-color: #1e1e1e; }
+.accent-red-box { background-color: #af2b2b; }
+.accent-gold-box { background-color: #d4a359; }
+.text-main-box { background-color: #e0e0e0; }
+
+/* Wireframe Visual Styles (Replaces inline style="height: ...", "flex: ...") */
 .wireframe-grid {
     display: flex;
     flex-wrap: wrap;
@@ -124,6 +132,16 @@ blockquote {
     font-family: var(--body-font);
 }
 
+.hero-block {
+    height: 50px;
+    line-height: 50px;
+}
+
+.hero-block-desktop {
+    height: 60px;
+    line-height: 60px;
+}
+
 .wf-row {
     display: flex;
     gap: 0.5rem;
@@ -131,4 +149,20 @@ blockquote {
 
 .wf-row .wf-block {
     flex: 1;
+}
+
+.main-content-block {
+    flex: 2;
+}
+
+.sidebar-block {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--accent-gold);
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9rem;
 }

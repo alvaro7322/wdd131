@@ -149,3 +149,13 @@ footer {
 footer p {
     margin-bottom: 5px;
 }
+
+@media screen and (min-width: 600px) {
+    main {
+        padding: 35px;
+    }
+
+    .rating {
+        gap: 25px;
+    }
+}

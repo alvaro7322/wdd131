@@ -79,9 +79,11 @@ fieldset {
     border: 1px solid var(--border-color);
     border-radius: 6px;
     padding: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 6px;
+    row-gap: 12px;
+    align-items: center;
 }
 
 legend {
@@ -89,31 +91,57 @@ legend {
     padding: 0 6px;
     color: var(--primary-color);
     font-size: 0.95rem;
+    grid-column: 1 / -1;
+    margin-bottom: 4px;
 }
 
-.rating {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.rating label,
 fieldset label {
     margin-bottom: 0;
     font-weight: 400;
-    display: flex;
-    align-items: center;
-    gap: 6px;
     cursor: pointer;
 }
 
-input[type="radio"],
 input[type="checkbox"] {
     width: 18px;
     height: 18px;
     accent-color: var(--primary-color);
     cursor: pointer;
+}
+
+
+.rating {
+    grid-column: 1 / -1;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: end;
+    padding: 5px 0;
+}
+
+.rating-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+    text-align: center;
+}
+
+.rating-item label {
+    font-size: 1rem;
+    color: #e67e22;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: -1px;
+    word-break: break-all;
+}
+
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary-color);
+    cursor: pointer;
+    margin: 0;
 }
 
 textarea {
@@ -150,12 +178,26 @@ footer p {
     margin-bottom: 5px;
 }
 
+select {
+    width: 100%;
+    padding: 12px 40px 12px 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%230056b3%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 18px;
+}
+
 @media screen and (min-width: 600px) {
     main {
         padding: 35px;
-    }
-
-    .rating {
-        gap: 25px;
     }
 }

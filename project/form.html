@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Report a suspicious Dota 2 match or submission for analysis in the 322 Archive.">
+    <meta name="author" content="Alvaro Garcia">
+    <title>Report a Case | 322 Archive</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>322 <span>Archive</span></h1>
+            </div>
+            <button id="menu-btn" class="hamburger-btn" aria-label="Toggle Menu">
+                <span class="menu-icon">☰</span>
+            </button>
+            <nav id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="form.html" class="active">Report a Case</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Submit a Match for Review</h2>
+            <p>Did you spot questionable itemization or suspicious plays in a competitive game? Submit the match details below for analysis.</p>
+
+            <form id="report-form" action="#" method="get">
+                <div class="form-group">
+                    <label for="match-id">Dota 2 Match ID:</label>
+                    <input type="text" id="match-id" name="matchId" required placeholder="e.g. 78912345">
+                </div>
+
+                <div class="form-group">
+                    <label for="tournament-name">Tournament Name:</label>
+                    <input type="text" id="tournament-name" name="tournament" required placeholder="e.g. BTS Pro Series SA">
+                </div>
+
+                <div class="form-group">
+                    <label for="teams">Teams Involved:</label>
+                    <input type="text" id="teams" name="teams" required placeholder="e.g. Team A vs Team B">
+                </div>
+
+                <div class="form-group">
+                    <label for="category-select">Suspicion Level:</label>
+                    <div class="select-wrapper">
+                        <select id="category-select" name="category" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="confirmed">Confirmed Incident</option>
+                            <option value="suspicious">High Suspicion</option>
+                            <option value="analysis">Technical Analysis</option>
+                        </select>
+                    </div>
+                </div>
+
+                <fieldset>
+                    <legend>Key Hero Involved</legend>
+                    <div class="form-group">
+                        <label for="hero-name">Hero Name:</label>
+                        <input type="text" id="hero-name" name="hero" placeholder="e.g. Storm Spirit">
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="description">Analysis Details & Timestamps:</label>
+                    <textarea id="description" name="description" rows="5" required placeholder="Describe unusual buybacks, plays, or item builds..."></textarea>
+                </div>
+
+                <input type="submit" value="Submit Report">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 322 Archive | Author: <strong>Alvaro Garcia</strong> — WDD131 Final Project</p>
+            <p><a href="references.html">References & Cited Sources Page</a></p>
+        </div>
+    </footer>
+</body>
+</html>

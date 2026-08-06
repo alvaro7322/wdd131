@@ -42,6 +42,28 @@ const matchArchive = [
         category: "confirmed",
         description: "Economic gap and lack of sponsorship drive young talent toward unregulated betting, undermining regional growth.",
         image: "https://www.infobae.com/new-resizer/0sxViiWRREu0bEUMKGTRsQv8X3k=/arc-anglerfish-arc2-prod-infobae/public/K7ZWN7E5UZBXZO7WR6C6AQAXAE.jpg"
+    },
+    {
+        id: "m5",
+        matchId: 55112233,
+        tournament: "NA DPC Lower Division 2021",
+        teams: "Wind and Rain vs Pecado Squad",
+        hero: "Offlane (Sword Ban)",
+        date: "2021-05-25",
+        category: "confirmed",
+        description: "UK organization bought slot to run a betting scheme with Peruvian player José 'Sword' Nicosia, leading to lifetime Valve bans.",
+        image: "https://i.ytimg.com/vi/Ul1TRhT-w5g/sddefault.jpg"
+    },
+    {
+        id: "m6",
+        matchId: 66223344,
+        tournament: "SA DPC Winter Tour 2023",
+        teams: "Dreamers Esports (Retroactive)",
+        hero: "Smurf/Multiple Accounts",
+        date: "2022-12-18",
+        category: "confirmed",
+        description: "Gianluca 'Migi' Castaneda was permanently banned by Valve right after qualifying cleanly, due to cross-referenced 322 activity in third-party tournaments.",
+        image: "https://imgmedia.larepublica.pe/1000x590/larepublica/migration/images/JI7WBJ77X5D2XBQGLYSDC67PZQ.webp"
     }
 ];
 

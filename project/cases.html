@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detailed historical timeline and database of Dota 2 match-fixing cases.">
+    <meta name="author" content="Alvaro Garcia">
+    <title>322 Archive | Match-Fixing Case Database</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>322 <span>Archive</span></h1>
+            </div>
+            <button id="menu-btn" class="hamburger-btn" aria-label="Toggle Menu">
+                <span class="menu-icon">☰</span>
+            </button>
+            <nav id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cases.html" class="active">Match Cases</a></li>
+                    <li><a href="form.html">Report a Case</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-banner">
+            <h2>Dota 2 Match-Fixing Database</h2>
+            <p>Comprehensive list of documented 322 incidents, investigations, and Valve bans in professional eSports.</p>
+        </section>
+
+        <section class="interactive-archive">
+            <h2>Historical Match Archive</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Cases</button>
+                <button class="filter-btn" data-filter="confirmed">Confirmed Bans</button>
+                <button class="filter-btn" data-filter="suspicious">Under Review</button>
+            </div>
+
+            <div class="matches-grid" id="matches-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 322 Archive | Author: <strong>Alvaro Garcia</strong> — WDD131 Final Project</p>
+            <p id="visit-counter">Loading visits...</p>
+            <p><a href="references.html">References & Cited Sources Page</a></p>
+        </div>
+    </footer>
+</body>
+</html>
